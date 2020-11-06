@@ -1,0 +1,39 @@
+
+.navbar {
+    background-color: #000000!important;
+    box-sizing: inherit;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0,0.4);
+
+}
+
+.nav-item-wrap {
+    margin-right: 5rem;
+}
+
+.navbar-toggler {
+    color: #ffffff!important;
+
+}
+
+.nav-item > * {
+    color: #32e0c4 !important;
+    font-size: large;
+    padding: 0 1rem;
+}
+.nav-item > *:hover {
+    color: yellow!important;
+    text-decoration: none;
+
+}
+
+.logo {
+    width: 5rem;
+    height: 4rem;
+    margin-left: 5rem;
+
+}
+@media only screen and (max-width:800px) {
+    .logo {
+        margin-left: 1.5rem;
+    }
+}

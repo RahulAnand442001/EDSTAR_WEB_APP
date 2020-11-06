@@ -1,0 +1,45 @@
+.form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url("../media/t1.png");
+    background-size: cover;
+    margin-bottom: -5rem !important;
+    padding-top: 1rem;
+}
+
+.form-links {
+    opacity: 0;
+}
+@media only screen and (max-width:600px) {
+
+    .form-container {
+        flex-direction: column;
+        display: none;
+    }
+
+    .form-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 65vh;
+        opacity: 1;
+        background: url("../media/access-blur.png");
+    }
+
+    .form-links > * {
+        padding: 2rem;
+        margin: 2rem 0;
+        font-size: larger;
+        background-color: #17141d;
+        box-shadow: 10px 10px 15px rgba(0,0,2,0.5);
+        text-decoration: none;
+        color: var(--color-light);
+    }
+    .form-links > *:focus {
+        padding: 1rem;
+    }
+
+}

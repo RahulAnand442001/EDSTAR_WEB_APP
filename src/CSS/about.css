@@ -1,0 +1,294 @@
+.About {
+    max-width: 120rem;
+    min-height: 100vh;
+    box-shadow: 5px 5px 10px rgba(0,0,2,0.8);
+    background-color: #17141d;
+    display: flex;
+    position: relative;
+    overflow: scroll;
+}
+
+/* --------------------------panel section ---------------------------------------------------------*/
+
+.about-panel {
+    flex: 0 0 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    padding: 0.5rem;
+    background-color: #ffcc66;
+}
+
+.side-panel-items {
+    list-style-type: none;
+    margin-top: 3.5rem;
+    font-size: 1.4rem;
+    margin-bottom: auto;
+    font-weight: 700;
+}
+
+.side-panel-item {
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-bottom: 3px solid black;
+    position: relative;
+    align-self: stretch;
+}
+.side-panel-item:hover {
+    background-color: #17141d;
+}
+
+.side-links {
+    color: #17141d;
+    padding: 0.5rem;
+}
+.side-links:hover {
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.link-icons {
+    margin: 0 0.5rem;
+}
+.link-icons:hover {
+    color: var(--color-light);
+}
+
+.about-home {
+    color: #17141d;
+}
+.about-home:hover {
+    color: var(--color-secondary);
+}
+
+.legal {
+    font-size: 1rem;
+    display: inline-block;
+    color: #17141d;
+    text-align: center;
+    padding: 2.5rem;
+    font-weight: 600;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ---------------------------------container section-----------------------------------------------*/
+.about-container {
+    flex: 1;
+    position: absolute;
+    left: 18%;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-light);
+}
+
+.about-heading {
+    font-size: 4rem;
+}
+
+.about-image {
+    width: 25rem;
+    height: 15rem;
+    margin: 1.5rem;
+}
+
+.intro-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.intro-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.intro-2 > * {
+    background-color: #ffdd99;
+    color: #17141d;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(173, 173, 173, 0.5);
+    border-radius: 40px 5px 40px 5px;
+    font-weight: 600;
+}
+
+.collapse-items > * {
+    margin: 1rem;
+    display: inline-block;
+
+}
+
+.mission-heading {
+    color: var(--color-primary);
+    font-size: 4rem;
+    margin: 1.5rem;
+}
+
+.mission-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
+}
+
+.mission-1 > * {
+    text-align: justify;
+    margin: 0.5rem;
+}
+.mission-2 {
+    margin: 1.5rem 0;
+}
+
+.mission-2 > * {
+    text-align: justify;
+}
+
+.vision-heading {
+    font-size: 4rem;
+    margin: 1.5rem;
+    color: var(--color-primary);
+}
+
+.vision-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+}
+
+.vision-1 > * {
+    text-align: left;
+}
+
+.vision-collapse > * {
+    display: inline-block;
+    margin: 1rem;
+
+}
+
+.team-heading {
+    font-size: 4rem;
+    color: var(--color-primary);
+    margin: 1.5rem;
+}
+
+.intro-para,
+.mission-para,
+.vision-para {
+    font-size: 1.2rem;
+}
+
+/*------------team section ----------------------------------*/
+.users {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user {
+    text-align: center;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+}
+
+.user-image {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.user p {
+    display: inline-block;
+}
+
+.user-name {
+    font-size: 1.5rem;
+    display: block;
+    margin: 5px;
+}
+
+.fa-envelope {
+    color: yellow;
+}
+
+/*****************media query section **********************************************/
+@media only screen and (max-width:800px) {
+
+    .About {
+        flex-direction: column;
+    }
+
+    .about-panel {
+        display: none;
+    }
+
+    .about-container {
+        left: 0;
+        padding: 1.5rem;
+    }
+
+    .about-heading,
+    .mission-heading,
+    .vision-heading {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .about-image {
+        width: 16rem;
+        height: 10rem;
+        margin:1rem;
+
+    }
+
+    .intro-1,
+    .intro-2 {
+        flex-direction: column;
+    }
+
+    .mission-1,
+    .mission-2 {
+        flex-direction: column;
+    }
+
+    .vision-1 {
+        flex-direction: column;
+    }
+
+    .team-heading {
+        font-size: 2rem;
+    }
+
+    .users {
+        flex-direction: column;
+    }
+
+    .mission-collapse,
+    .vision-collapse {
+        display: grid;
+        flex-direction: column;
+    }
+
+    .intro-para,
+    .mission-para,
+    .vision-para {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+    .user-image {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .user-name {
+        font-size: 1rem;
+    }
+}

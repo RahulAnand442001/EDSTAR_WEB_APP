@@ -1,0 +1,32 @@
+.Resource {
+    text-align: center;
+}
+
+.resource-main-heading {
+    font-size: 4.5rem;
+    margin: 2rem;
+    color: var(--color-secondary);
+}
+
+.resource-container {
+    margin: 5rem 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem,1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+}
+
+.resource-image {
+    height: 10rem;
+}
+@media only screen and (max-width:800px) {
+    .resource-container {
+        margin: 1rem;
+
+    }
+
+    .resource-main-heading {
+        font-size: 2.5rem;
+    }
+}

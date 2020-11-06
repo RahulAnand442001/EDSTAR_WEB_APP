@@ -1,0 +1,198 @@
+.covid {
+    min-height: 100vh;
+    text-align: center;
+    margin: 5rem;
+}
+.covid-heading {
+    font-size: 4rem;
+    color: var(--color-secondary);
+    margin: 1.5rem 0.5rem;
+}
+
+.covid-links {
+    margin: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.covid-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--color-light);
+    background: linear-gradient(125deg ,#048d8d, #6a097d );
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0,0,2,0.5);
+}
+.covid-link:hover {
+    background: linear-gradient(125deg,#04e273,#18045e);
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.covid-slide-photo {
+    height: 25rem;
+    width: auto;
+}
+
+.covid-content {
+    margin: 2rem 1rem;
+}
+
+.content-heading {
+    margin: 1.5rem 0.5rem;
+    color: crimson;
+}
+
+.content-description {
+    margin: 0.5rem;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+}
+
+.content-photo {
+    height: 15rem;
+    width: auto;
+    margin: 0.5rem 1rem;
+}
+
+.covid-guidelines {
+    margin: 2rem 1rem;
+}
+
+.covid-title {
+    color: red;
+    margin: 0 0.5rem;
+    font-weight: 800;
+}
+
+.guideline-heading {
+    color: blue;
+    margin: 1.5rem 0.5rem;
+}
+
+.guideline-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+.guideline-content-photo {
+    height: 10rem;
+    width: auto;
+    margin: 0.5rem 1rem;
+}
+
+.covid-message-heading {
+    margin: 1.5rem 0.5rem;
+    color: crimson;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+.covid-message-box {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.message-photo {
+    height: 20rem;
+    width: auto;
+    margin: 0.5rem 1rem;
+}
+
+.message-content {
+    margin: 1.5rem;
+    padding: 0.5rem;
+    text-align: justify;
+    font-weight: 0.5rem;
+    font-size: 1rem;
+}
+
+.company {
+    margin-right: auto;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width:800px) {
+    .covid {
+        margin: 0;
+    }
+    .covid-heading {
+        font-size: 2rem;
+    }
+
+    .covid-slide-photo {
+        height: 12rem;
+        width: auto;
+    }
+
+    .covid-links {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .covid-link {
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 0.5rem 1rem;
+    }
+
+    .content-heading {
+        font-size: 1.5rem;
+    }
+
+    .content-description {
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .content-photo {
+        margin: 0;
+        height: 9.4rem;
+    }
+
+    .covid-title {
+        margin: 0 0.2rem;
+        font-size: 1.5rem;
+    }
+
+    .guideline-heading {
+        font-size: 1rem 0.2rem;
+        font-size: 1.5rem;
+    }
+
+    .guideline-content {
+        flex-direction: column;
+    }
+
+    .guideline-content-photo {
+        margin: 0;
+        height: 8rem;
+    }
+
+    .covid-message-box {
+        flex-direction: column;
+    }
+
+    .covid-message-heading {
+        font-size: 1rem 0.2rem;
+        font-size: 1.2rem;
+    }
+
+    .message-content {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    .message-photo {
+        margin: 0.2rem;
+        height: 10rem;
+    }
+}

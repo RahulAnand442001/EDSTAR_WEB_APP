@@ -1,0 +1,270 @@
+
+/***************************default layout ****************************/
+
+.default-interior {
+    min-height: 100vh;
+    text-align: center;
+}
+
+.fa-soundcloud {
+    color: transparent;
+    background-image: linear-gradient(90deg, #d7385e,#150485);
+    background-clip: text;
+
+}
+
+.default-heading {
+    font-size: 5rem;
+    color: transparent;
+    background-image: linear-gradient(270deg, #d7385e,#150485);
+    background-clip: text;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.default-content {
+    font-size: 2rem;
+    color: transparent;
+    background-image: linear-gradient(145deg,#400082,#00bdaa);
+    background-clip: text;
+    font-weight: 700;
+}
+
+.interior-course-button {
+    color: transparent;
+    background-image: linear-gradient(270deg, #d7385e,#150485);
+    background-clip: text;
+    margin-top: 5rem;
+}
+
+/***********************************course section ******************************************************************/
+
+.course {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 5rem;
+}
+
+.course-card-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding: 5rem;
+
+}
+
+.course-content-section {
+    padding: 1rem 2rem;
+
+}
+
+/***************************card*********************************************/
+.course-card {
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(140, 140, 141, 0.5);
+    border-radius: 5px!important;
+    background-color: #fdf4f4!important;
+    margin: 1rem;
+}
+.access-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sample {
+    padding: 0.4rem;
+    background: #28024e !important;
+    color: var(--color-light) !important;
+    border: none!important;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    align-self: stretch;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+
+}
+
+.razorpay-button {
+    padding: 0.4rem;
+    background: #0B1422 !important;
+    color: var(--color-light) !important;
+    border: none!important;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+    align-self: stretch;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.sample:hover {
+    text-decoration: none;
+}
+.razorpay-button:hover {
+    text-decoration: none;
+}
+
+/*******************************************access token **********************************************************/
+
+.access-token-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+.access-card {
+    text-align: center;
+    width: 18rem;
+    height: min-content;
+    background: #17141d;
+    border-radius: 10px;
+    color: var(--color-light);
+    padding: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+    margin: 1rem;
+}
+.access-card:hover {
+    transform: skew(1deg);
+}
+.card-divider {
+    background: cyan;
+}
+
+.course-name {
+    font-size: 1.5rem;
+}
+
+.course-code {
+    font-size: 1.5rem;
+    color: #777;
+
+}
+
+.course-access-link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(90deg,#ff8a00,#e52e71);
+    background-clip: text;
+    color: transparent;
+}
+
+.eligibility-content {
+    font-size: 1.5rem;
+}
+.course-access-link:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
+.package-note {
+    font-size: 1.5rem;
+}
+
+/*********************course-content-details***********************************************************/
+
+.course-price {
+    font-size: 2.5rem;
+}
+
+.course-heading {
+    font-size: 3rem;
+}
+
+.package-features {
+    list-style-type: disc;
+}
+
+.package-feature {
+    font-size: 1.5rem;
+}
+
+.payment-category-list {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.package-note-subheading {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.package-eligibility {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.package-features-heading {
+    color: var(--color-secondary-light-1);
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+/***************************************************media queries**********************************************/
+@media only screen and (max-width:800px) {
+
+    .course {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .course-heading {
+        font-size: 1.5rem;
+    }
+
+    .access-token-container {
+        flex-direction: column;
+    }
+
+    .course-price {
+        font-size: 1.5rem;
+    }
+
+    .course-validity {
+        font-size: 1.5rem;
+    }
+
+    .course-card {
+        width: 18rem;
+    }
+
+    .access-card {
+        width: 15rem;
+    }
+
+    .course-card-section {
+        padding: 1rem;
+    }
+
+    .course-content-section {
+        padding: 0.5rem;
+    }
+
+    .package-feature,
+    .package-note,
+    .payment-category-list {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .eligibility-content {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .package-eligibility,
+    .package-features-heading,
+    .package-note-subheading,
+    .package-payment-question {
+        font-size: 1.2rem;
+    }
+
+    .question-subheading {
+        text-align: left;
+    }
+
+}
